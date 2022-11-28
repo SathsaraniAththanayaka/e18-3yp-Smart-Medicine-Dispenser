@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Color Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Color-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,0 C1.792,0 0,1.79164166 0,3.99920014 C0,6.20675862 1.792,7.99840028 4,7.99840028 C6.208,7.99840028 8,6.20675862 8,3.99920014 C8,1.79164166 6.208,0 4,0 Z M3.2,5.99880021 L1.2,3.99920014 L1.764,3.43531292 L3.2,4.86702657 L6.236,1.83163366 L6.8,2.39952008 L3.2,5.99880021 Z" id="Check" fill="#6DB41E" fill-rule="nonzero"></path>
+        <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="3.2253418 4.83184814 1.74963379 3.39880371 1.17108154 4 3.2253418 6.03747559 6.84362793 2.39300537 6.23376465 1.82452393"></polygon>
+    </g>
+</svg>
