@@ -1278,7 +1278,7 @@ section {
 
 .pricing ul {
   padding: 20px 0;
-  list-style: none;
+  list-style: none; 
   color: #999;
   text-align: left;
   line-height: 20px;
