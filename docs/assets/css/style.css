@@ -32,6 +32,24 @@ h6 {
   font-family: "Jost", sans-serif;
 }
 
+table, th, td {  
+  border: 1px solid rgb(34, 14, 148);  
+  border-collapse: collapse;  
+}  
+th, td {  
+  padding: 10px;  
+}  
+table#alter tr:nth-child(even) {  
+  background-color: #eee;  
+}  
+table#alter tr:nth-child(odd) {  
+  background-color: rgb(133, 116, 116);  
+}  
+table#alter th {  
+  color: rgb(172, 58, 58);  
+  background-color: rgb(128, 128, 128);  
+}  
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
