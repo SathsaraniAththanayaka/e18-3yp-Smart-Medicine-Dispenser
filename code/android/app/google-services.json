@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "236638043461",
+    "project_id": "dispensa-database",
+    "storage_bucket": "dispensa-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236638043461:android:7410ffa92a5fa641c5122c",
+        "android_client_info": {
+          "package_name": "com.example.dispensa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236638043461-p1v234trc3hq3e7l7v187oa43kp69pkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxdfr4yGYRKYY0QmGyOpZSyZ45nHqOjoE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236638043461-p1v234trc3hq3e7l7v187oa43kp69pkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
