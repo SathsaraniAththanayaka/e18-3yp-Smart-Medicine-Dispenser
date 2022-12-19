@@ -27,19 +27,21 @@ class SignInButtons extends StatelessWidget {
      final _authController = Get.find<AuthController>();
     return Expanded(flex: 1,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            
             children: [
               Padding(
               padding:
                   EdgeInsets.symmetric(vertical: Config.screenHeight! * 0.005),
-              child:Align(
-                alignment: Alignment.centerRight,
-                child: TextButton(onPressed: () => Get.to(() => ResetPassword()),
-                 child: Text('Forgot Password'),
-                 style: ButtonStyle(
-                  overlayColor: MaterialStateColor.resolveWith(
-                    (states) => Colors.transparent,)
-                 )
+              child:Expanded(
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton(onPressed: () => Get.to(() => ResetPassword()),
+                   child: Text('Forgot Password'),
+                   style: ButtonStyle(
+                    overlayColor: MaterialStateColor.resolveWith(
+                      (states) => Colors.transparent,)
+                   )
+                  ),
                 ),
               ),
               ),
