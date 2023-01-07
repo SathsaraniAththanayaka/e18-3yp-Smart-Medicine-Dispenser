@@ -218,7 +218,7 @@ class _PatientRegistrationState extends State<PatientRegistration> {
                       initialDate: DateTime.now(), 
                       firstDate: DateTime(1950), 
                       lastDate: DateTime(2101));
-                    _birthController.text = date.toString().substring(0,10);
+                    _dateofadmittanceController.text = date.toString().substring(0,10);
 
                     
                   },
