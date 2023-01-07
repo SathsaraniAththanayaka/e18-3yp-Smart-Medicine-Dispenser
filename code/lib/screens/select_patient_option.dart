@@ -1,12 +1,10 @@
 import 'package:dispensa/screens/medicine_history.dart';
 import 'package:dispensa/screens/patient_profile.dart';
-import 'package:dispensa/screens/prescription.dart';
+import 'package:dispensa/screens/show_prescription.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:get/get.dart';
 
-import 'fake/blank_prescription.dart';
+
+
 
 class SelectOption extends StatefulWidget {
    const SelectOption({required this.documentId});
@@ -72,7 +70,7 @@ class _SelectOptionState extends State<SelectOption> {
               child: IconButton(
                 onPressed: () {
                   Navigator.push(context, new MaterialPageRoute
-                                    (builder: (context) => BlankPrescription(
+                                    (builder: (context) => ShowPrescription(
                                         documentId: widget.documentId 
                                     )));
                 },
