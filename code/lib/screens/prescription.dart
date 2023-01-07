@@ -36,47 +36,13 @@ class _PrescriptionState extends State<Prescription> {
           var docor = snapshot.data!.docs;
               
           
-              return new ListView.builder(
-                  itemCount: docor.length,
-                  itemBuilder: (context, index) {
-                    DocumentSnapshot user = snapshot.data!.docs[index];
-                    String documentId = user.id;
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Card(
-                        child: Column(
-                          children: <Widget>[
-                            
-                            
-                            ListTile(
-                              leading: CircleAvatar(radius: 25,backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThofG1Z2Mivccct2YR6aqe-XNszwBT09DYnw&usqp=CAU'),),
-                              title: Text(snapshot.data!.docs[index]['Metphomine'] ,style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black
-                                )),
-                                    subtitle: Text(snapshot.data!.docs[index]['Paracetamol'],
-                                    style: TextStyle(
-                                     color: Colors.green
-                )),         
-                                    trailing: Icon(Icons.keyboard_arrow_right),
-                                    selected: true,
-                                    
-                                onTap: (){
-                                  Navigator.push(context, new MaterialPageRoute
-                                    (builder: (context) => SelectOption(
-                                        documentId: documentId 
-                                    )));
-                                },
-                            ),
-                            
-                            
-                            
-                          ],
-                        ),
-                      ),
-                    );
-                  });
+              return Expanded(
+                child: ListView.builder(
+                    itemCount: docor.length,
+                    itemBuilder: (context, index) {
+                      return Text(snapshot.data!.docs[index]['Paracetamol']);
+                    }),
+              );
         }
         
      
