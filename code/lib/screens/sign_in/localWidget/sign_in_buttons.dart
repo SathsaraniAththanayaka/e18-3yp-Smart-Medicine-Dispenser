@@ -25,14 +25,12 @@ class SignInButtons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      final _authController = Get.find<AuthController>();
-    return Expanded(flex: 1,
+    return Expanded(
+        
           child: Column(
             
             children: [
-              Padding(
-              padding:
-                  EdgeInsets.symmetric(vertical: Config.screenHeight! * 0.005),
-              child:Expanded(
+              Expanded(
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(onPressed: () => Get.to(() => ResetPassword()),
@@ -44,7 +42,6 @@ class SignInButtons extends StatelessWidget {
                   ),
                 ),
               ),
-              ),
               RoundedElevatedButton(title: 'Sign in',
               onPressed: (){
                 if(_formKey!.currentState!.validate()){
@@ -55,7 +52,7 @@ class SignInButtons extends StatelessWidget {
               },
               padding: EdgeInsets.symmetric(
                 horizontal: Config.screenWidth! * 0.3,
-                vertical: Config.screenHeight! * 0.02,
+                vertical: Config.screenHeight! * 0.0001,
               )
               ),
               TextWithTextButton(
