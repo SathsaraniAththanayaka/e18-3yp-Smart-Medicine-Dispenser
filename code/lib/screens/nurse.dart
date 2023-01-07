@@ -11,6 +11,7 @@ import '../widgets/hero_image.dart';
 import '../widgets/hero_title.dart';
 import '../widgets/rounded_elevated_button.dart';
 import '../widgets/rounded_text_formfield.dart';
+import 'home/nurse_home_page.dart';
 
 class NurseCredentials extends StatefulWidget {
   const NurseCredentials({super.key});
@@ -54,7 +55,7 @@ class _NurseCredentialsState extends State<NurseCredentials> {
                   onPressed: (){
                   Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const DocHome()),
+                  MaterialPageRoute(builder: (context) => const NurseHome()),
   );
             },
             padding: EdgeInsets.symmetric(horizontal: Config.screenWidth! * 0.2,vertical: Config.screenHeight! * 0.0001),),
