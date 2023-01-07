@@ -21,19 +21,71 @@ class _DocHomeState extends State<DocHome> {
         backgroundColor: Colors.lightBlue[400],
         title: Text('Ward'),
         centerTitle: true,
-        actions: [
-          IconButton(onPressed: (){
+        // leading: IconButton(onPressed: (){
 
-          }, icon: const Icon(Icons.settings))
-        ],
-        leading: IconButton(onPressed: (){
-
-        },
-        icon: IconButton(icon: const Icon(Icons.menu),
-        onPressed:(() {
+        // },
+        // icon: IconButton(icon: const Icon(Icons.menu),
+        // onPressed:(() {
           
-        }) ,),),
+        // }) ,),),
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            // const DrawerHeader(decoration: BoxDecoration(
+            //   color: Colors.lightBlue,
+            // ),
+            // child: Text('Username'),),
+            UserAccountsDrawerHeader(
+              accountName: Text("Sathsarani Aththanayaka"),
+              accountEmail: Text("sathsarani15920@gmail.com"),
+              currentAccountPicture: Image.asset('assets/drawer.png'),
+            ),
+            ListTile(
+              title: const Text('Home'),
+              leading: Icon(Icons.home),
+              onTap: (){
+
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Account'),
+              leading: Icon(Icons.switch_account),
+              onTap: (){
+
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Settings'),
+              leading: Icon(Icons.settings),
+              onTap: (){
+
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Help & Feedback'),
+              leading: Icon(Icons.help),
+              onTap: (){
+
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Logout'),
+              leading: Icon(Icons.logout),
+              onTap: (){
+
+                Navigator.pop(context);
+              },
+            ),
+
+          ],
+        ),
+      ) ,
       body: PatientList(),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
