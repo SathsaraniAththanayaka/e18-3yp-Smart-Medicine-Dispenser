@@ -53,7 +53,7 @@ class _PatientListState extends State<PatientList> {
                                     style: TextStyle(
                                      color: Colors.green
                 )),         
-                                    trailing: Icon(Icons.keyboard_arrow_right),
+                                    trailing: Icon(Icons.delete),
                                     selected: true,
                                     
                                 onTap: (){
